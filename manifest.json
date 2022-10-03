@@ -1,13 +1,11 @@
 {
-  "manifest_version": 2,
-  "name": "Udemy Set Video Player Height",
-  "version": "1.0",
-
-  "description": "Set Udemy video player height.",
-
+  "manifest_version": 3,
+  "name": "Increase Udemy video player height",
+  "version": "1.1",
+  "description": "Increase Udemy video player height to browser height!",
   "content_scripts": [
     {
-      "matches": ["*://*.udemy.com/*"],
+      "matches": ["https://*.udemy.com/course/*"],
       "js": ["udemy-set-video-height.js"]
     }
   ]
